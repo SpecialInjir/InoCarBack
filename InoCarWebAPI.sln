@@ -1,0 +1,55 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.2.32519.379
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InoCarWebAPI", "InoCarWebAPI\InoCarWebAPI.csproj", "{449F14B7-7DB7-4A3D-9286-9E5B96C51139}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InoCar.Services", "InoCar.Services\InoCar.Services.csproj", "{7923A837-354B-4741-99E2-B22EDC917BD9}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InoCar.Repositories", "InoCar.Repositories\InoCar.Repositories.csproj", "{7F2FC201-BED0-42C4-87A5-1565AC3B027C}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InoCar.Data", "InoCar.Data\InoCar.Data.csproj", "{2E8AAB4F-6B23-4652-810B-FC9C52B095B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "InoCar.Common", "InoCar.Common\InoCar.Common.csproj", "{FE721482-BA5D-48F8-8CB2-538E44AC11CF}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InoCar.Api.Model", "InoCar.Api.Model\InoCar.Api.Model.csproj", "{96C607C8-834F-47AF-AA5D-05DEBBA9604D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{449F14B7-7DB7-4A3D-9286-9E5B96C51139}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{449F14B7-7DB7-4A3D-9286-9E5B96C51139}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{449F14B7-7DB7-4A3D-9286-9E5B96C51139}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{449F14B7-7DB7-4A3D-9286-9E5B96C51139}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7923A837-354B-4741-99E2-B22EDC917BD9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7923A837-354B-4741-99E2-B22EDC917BD9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7923A837-354B-4741-99E2-B22EDC917BD9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7923A837-354B-4741-99E2-B22EDC917BD9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7F2FC201-BED0-42C4-87A5-1565AC3B027C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7F2FC201-BED0-42C4-87A5-1565AC3B027C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7F2FC201-BED0-42C4-87A5-1565AC3B027C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7F2FC201-BED0-42C4-87A5-1565AC3B027C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2E8AAB4F-6B23-4652-810B-FC9C52B095B3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2E8AAB4F-6B23-4652-810B-FC9C52B095B3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2E8AAB4F-6B23-4652-810B-FC9C52B095B3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2E8AAB4F-6B23-4652-810B-FC9C52B095B3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FE721482-BA5D-48F8-8CB2-538E44AC11CF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FE721482-BA5D-48F8-8CB2-538E44AC11CF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FE721482-BA5D-48F8-8CB2-538E44AC11CF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FE721482-BA5D-48F8-8CB2-538E44AC11CF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{96C607C8-834F-47AF-AA5D-05DEBBA9604D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{96C607C8-834F-47AF-AA5D-05DEBBA9604D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{96C607C8-834F-47AF-AA5D-05DEBBA9604D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{96C607C8-834F-47AF-AA5D-05DEBBA9604D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {3F2EF1DE-ED31-4052-8FB9-F4E7CF55E54A}
+	EndGlobalSection
+EndGlobal
