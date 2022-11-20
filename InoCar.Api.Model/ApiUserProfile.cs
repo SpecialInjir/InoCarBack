@@ -14,7 +14,7 @@ namespace InoCar.Api.Model
 
         public string Email { get; set; }
 
-        public DateTime DateBirth { get; set; }
+        public string DateBirth { get; set; }
 
         public string? City { get; set; }
     }

@@ -314,12 +314,12 @@ namespace InoCarWebAPI.Controllers
 
         [HttpGet]
         [Route("profile")]
-    //    [Authorize]
+        //[Authorize]
         public async Task<ActionResult<ApiUserProfile>> GetUserProfileAsync()
         {
             string userId = GetUserId();
             var results = await _userService.GetUserProfile(userId);
-
+           
             if (results.IsSuccess)
             {
                 return Ok(results);

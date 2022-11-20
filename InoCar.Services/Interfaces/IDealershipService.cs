@@ -12,7 +12,7 @@ namespace InoCar.Services.Interfaces
     public interface IDealershipService
     {
         Task<ApiResponseMessage<ApiResponse<ApiDealership>>> GetDealershipsAsync(string city, int carId);
-        Task<ApiResponseMessage<ApiResponse<ApiDealershipInformation>>> GetDealershipsAllAsync(string userId);
+        Task<ApiResponse<ApiDealershipInformation>> GetDealershipsAllAsync(string userId);
         Task<ApiResponseMessage<ApiDealershipInformation>> GetDealershipByIdAsync(int dealershipId);
         Task<ApiResponseMessage<int>>  AddFeedbackAsync(int dealershipId, DealershipFeedbackDTO dto);
         Task<ApiResponseMessage<ApiDealershipFeedback>> GetFeedbackAsync(int dealershipId);

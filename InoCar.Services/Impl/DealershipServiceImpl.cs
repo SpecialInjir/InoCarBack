@@ -110,33 +110,31 @@ namespace InoCar.Services.Impl
             return result;
         }
 
-        public async Task<ApiResponseMessage<ApiResponse<ApiDealershipInformation>>> GetDealershipsAllAsync(string userId)
+        public async Task<ApiResponse<ApiDealershipInformation>> GetDealershipsAllAsync(string userId)
         {
-            var result = new ApiResponseMessage<ApiResponse<ApiDealershipInformation>>();
+      
             try
             {
                 User? user = await _userRepository.GetUserByIdAsync(userId);
                 if (user == null || user.City==null)
                 {
-                    result.IsSuccess = false;
-                    result.Message = "User city not found";
-                    return result;
+                   
+                    return null;
                 }
                 var dealerships = await _dealershipRepository.GetDealershipsByCityAsync(user.City);
 
                 List<ApiDealershipInformation> apiDealershipInformations = _mapper.Map<List<ApiDealershipInformation>>(dealerships);
 
                 ApiResponse<ApiDealershipInformation> apiResponse = new(apiDealershipInformations);
-                result.IsSuccess = true;
-                result.Result = apiResponse;
+                
+                 return apiResponse;
             }
             catch (Exception ex)
             {
-                result.IsSuccess = false;
-                result.Message = $"Something Went Wrong in the {nameof(GetDealershipsAllAsync)} - {ex}";
+                return null;
             }
 
-            return result; 
+            
         }
 
         public async Task<ApiResponseMessage<ApiDealershipInformation>> GetDealershipByIdAsync(int dealershipId)

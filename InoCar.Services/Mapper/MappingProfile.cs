@@ -42,8 +42,9 @@ namespace InoCar.Servises.Mapper
 
             //CreateMap<TimeSlot, ApiTimeSlot>();
 
-            CreateMap<User, ApiUserProfile>();
-         
+            CreateMap<User, ApiUserProfile>()
+             .ForMember(dest => dest.DateBirth, y => y.MapFrom(src => src.DateBirth.ToString("yyyy'-'MM'-'dd")));
+
             CreateMap<VisitReason, ApiVisitReason>();
 
             CreateMap<PersonalOffer, ApiPersonalOffer>();

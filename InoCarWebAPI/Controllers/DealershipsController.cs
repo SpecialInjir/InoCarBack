@@ -70,14 +70,14 @@ namespace InoCarWebAPI.Controllers
         {
             string userId = GetUserId();
             var results = await _dealershipService.GetDealershipsAllAsync(userId);
-            if (results.IsSuccess)
+            if (results!=null)
             {
                 return Ok(results);
             }
             else
             {
-                Log.Debug(message: results.Message);
-                return NotFound(results.Message);
+               
+                return NotFound();
             }
         }
         /// <summary>

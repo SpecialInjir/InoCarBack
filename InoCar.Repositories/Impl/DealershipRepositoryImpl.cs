@@ -36,7 +36,7 @@ namespace InoCar.Repositories.Impl
 
         public async Task<IEnumerable<Dealership>> GetDealershipsByCityAsync(string city)
         {
-            return await _context.Dealerships.Where(x => x.Address.Contains(city) && !x.IsDeleted)
+            return await _context.Dealerships.Where(x => x.Name.Contains(city) && !x.IsDeleted)
                   .ToArrayAsync();
 
         }

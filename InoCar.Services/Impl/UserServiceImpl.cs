@@ -422,7 +422,7 @@ namespace InoCar.Services.Impl
                     result.Message = "User not found or  email not confirmed";
                     return result;
                 }
-
+                
                 ApiUserProfile apiUserProfile = _mapper.Map<ApiUserProfile>(user);
                 result.IsSuccess = true;
                 result.Result = apiUserProfile;
